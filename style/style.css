@@ -1,0 +1,113 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+@font-face {
+    font-family: New Rocker;
+    src: url(../assets/fonts/NewRocker-Regular.ttf);
+}
+
+#conteiner{
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#banner{
+    margin-top: 30px;
+}
+
+#controls{
+    margin-top: 10px;
+}
+
+#songD{
+    margin-right: 75px;
+    margin-top: 5px;
+}
+
+.volume{
+    position: relative;
+    bottom: 20px;
+    left: 28px;
+}
+
+.progBar{
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 19px;
+    width: 260px;
+    height: 9px;
+    background: darkgray;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.progBarFill{
+    width: 0;
+    height: 9px;
+    background: #A84F9F;
+}
+
+#songsName{
+    color: #A84F9F;
+    font-family: "New Rocker";
+    font-size: 28px;
+    text-shadow: 3px 3px #3b2139;
+}
+
+#goML{
+    color: white;
+    border: 2px solid #A84F9F;
+    margin: auto;
+    padding: 7px;
+    width: 240px;
+    cursor: pointer;
+}
+
+#goML:active{
+    color: #A84F9F;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:visited{
+    text-decoration: none;
+    color: #A84F9F;
+}
+
+#titleP2{
+    color: #A84F9F;
+    font-family: "New Rocker";
+    text-shadow: 3px 3px #3b2139;
+}
+
+#listM{
+    margin: auto;
+    color: white;
+    border: 4px solid #A84F9F;
+    border-radius: 5px;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style-type: none;
+    text-align: left;
+}
+
+li{
+    margin-bottom: 6px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li:active{
+    color: #A84F9F;
+}

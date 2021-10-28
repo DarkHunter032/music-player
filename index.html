@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="./assets/images/ico.png" type="image/png">
+    <link rel="stylesheet" href="./style/style.css" type="text/css">
+</head>
+<body onload="returnMusic()">
+    <div id="conteiner">
+        
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/Angel.ogg" type="audio/ogg">
+            <source src="./assets/music/Angel.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/Sad But True.ogg" type="audio/ogg">
+            <source src="./assets/music/Sad But True.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/The Kids Are Back.ogg" type="audio/ogg">
+            <source src="./assets/music/The Kids Are Back.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/Never Say Never.ogg" type="audio/ogg">
+            <source src="./assets/music/Never Say Never.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/Fear of the Dark.ogg" type="audio/ogg">
+            <source src="./assets/music/Fear of the Dark.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio ontimeupdate="progBarFunc()" onended="nextM()" class="music">
+            <source src="./assets/music/Classic Heavy Metal.ogg" type="audio/ogg">
+            <source src="./assets/music/Classic Heavy Metal.mp3" type="audio/mpeg">
+        </audio>
+
+        <img id="banner" src="./assets/images/Banner.png" width="260">
+
+        <div class="progBar">
+            <div class="progBarFill">
+
+            </div>
+        </div>
+
+        <div id="controls">
+            <img onclick="backM()" class="cbtn" src="./assets/images/buttons/back.png">
+            <img onclick="playM()" class="cbtn" src="./assets/images/buttons/play.png">
+            <img onclick="stopM()" class="cbtn" src="./assets/images/buttons/stop.png">
+            <img onclick="nextM()" class="cbtn" src="./assets/images/buttons/next.png">
+        </div>
+
+        <div id="songD">
+        <img id="songIMG" src="./assets/images/buttons/songOn.png">
+        <input type="range" class="volume" min="0" max="1" step="0.10" value="1">
+        </div>
+
+        <h2 id="songsName">Angel</h2>
+        
+        <a class="link" href="./musicList.html"><h2 id="goML">Go to musics list</h2></a>
+
+    </div>
+
+    <script src="./ScriptJS/script.js"></script>
+
+</body>
+</html>
